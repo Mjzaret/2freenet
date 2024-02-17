@@ -7,11 +7,11 @@ if [[ $(id -u) != "0" ]]; then
 fi
 
 # Check whether CentOS 7 or RHEL 7 is detected
-if [[ $(grep "release 7." /etc/redhat-release 2>/dev/null | wc -l) -eq 0 ]]; then
-    printf "\e[42m\e[31mError: Your OS is NOT CentOS 7 or RHEL 7.\e[0m\n"
-    printf "\e[42m\e[31mThis install script is ONLY for CentOS 7 and RHEL 7.\e[0m\n"
-    exit 1
-fi
+#if [[ $(grep "release 7." /etc/redhat-release 2>/dev/null | wc -l) -eq 0 ]]; then
+#    printf "\e[42m\e[31mError: Your OS is NOT CentOS 7 or RHEL 7.\e[0m\n"
+#    printf "\e[42m\e[31mThis install script is ONLY for CentOS 7 and RHEL 7.\e[0m\n"
+#    exit 1
+#fi
 
 basepath=$(dirname $0)
 cd ${basepath}
