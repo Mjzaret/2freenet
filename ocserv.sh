@@ -34,7 +34,7 @@ function ConfigEnvironmentVariable {
 	servercert=${1-server-cert.pem}
     serverkey=${2-server-key.pem}
     # VPN Intranet IP segment
-    vpnnetwork="192.168.100.0/22"
+    vpnnetwork="172.30.20.0/22"
     # DNS
     dns1="1.1.1.1"
     dns2="8.8.8.8"
